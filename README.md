@@ -48,3 +48,28 @@ Password	password
 Field	        Value
 Email	        userc@example.com
 Password	password
+
+D. Frontend Flutter
+1. Persyaratan
+PHP 7.4.27 atau lebih tinggi
+Composer
+MySQL 5.7 atau lebih tinggi
+Node.js 16.17.0
+Flutter SDK 3.x
+
+2. Clone repository
+git clone https://github.com/yourusername/miniwallet-mobile.git
+cd miniwallet-mobile
+
+3. Install dependencies
+flutter pub get
+
+4. Konfigurasi base URL
+# Edit lib/utils/constants.dart
+static const String baseUrl = 'http://192.168.1.100:8000/api'; // Ganti dengan IP komputer
+
+5. Run aplikasi
+flutter run
+
+6. Build APK
+flutter build apk --release
